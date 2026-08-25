@@ -1,0 +1,58 @@
+execve("./process_control", ["./process_control"], 0x7ffff94a8680 /* 25 vars */) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x70ef2f7b6a10) = 1121
+wait4(-1total 192
+drwxr-x--- 15 harivikash_katta harivikash_katta  4096 Aug 25 14:47 .
+drwxr-xr-x  3 root             root              4096 Jul 23 03:53 ..
+-rw-------  1 harivikash_katta harivikash_katta  4086 Aug 20 04:48 .bash_history
+-rw-r--r--  1 harivikash_katta harivikash_katta   220 Jul 23 03:53 .bash_logout
+-rw-r--r--  1 harivikash_katta harivikash_katta  3771 Jul 23 03:53 .bashrc
+drwxr-x---  4 harivikash_katta harivikash_katta  4096 Jul 23 03:54 .cache
+drwxr-x---  3 harivikash_katta harivikash_katta  4096 Jul 23 03:54 .config
+drwxr-xr-x  7 harivikash_katta harivikash_katta  4096 Aug 25 14:47 .git
+drwxr-xr-x  3 harivikash_katta harivikash_katta  4096 Jul 30 03:41 .local
+-rw-rw-r--  1 harivikash_katta harivikash_katta     0 Aug 25 08:59 .motd_shown
+-rw-r--r--  1 harivikash_katta harivikash_katta   807 Jul 23 03:53 .profile
+-rw-------  1 harivikash_katta harivikash_katta   669 Jul 30 03:40 .viminfo
+-rw-r--r--  1 harivikash_katta harivikash_katta   184 Aug 25 14:13 Makefile
+-rwxr-xr-x  1 harivikash_katta harivikash_katta 16168 Aug 12 19:35 a.out
+-rw-r--r--  1 harivikash_katta harivikash_katta     0 Aug  6 03:41 b2
+drwxr-xr-x  2 harivikash_katta harivikash_katta  4096 Aug 25 14:13 build
+-rw-r--r--  1 harivikash_katta harivikash_katta   243 Aug 12 08:21 class.c
+-rw-r--r--  1 harivikash_katta harivikash_katta   246 Aug 12 08:37 class1.c
+-rw-r--r--  1 harivikash_katta harivikash_katta   273 Aug 12 19:35 class2.c
+drwxr-xr-x  2 harivikash_katta harivikash_katta  4096 Jul 25 05:52 dir1
+drwxr-xr-x  2 harivikash_katta harivikash_katta  4096 Jul 25 05:53 dir2
+drwxr-xr-x  2 harivikash_katta harivikash_katta  4096 Aug 25 14:47 docs
+-rw-r--r--  1 harivikash_katta harivikash_katta    56 Aug 12 04:51 ex1
+-rw-r--r--  1 harivikash_katta harivikash_katta    86 Aug 12 06:48 exece1.c
+-rw-r--r--  1 harivikash_katta harivikash_katta    80 Aug 12 06:54 exece2.c
+-rw-r--r--  1 harivikash_katta harivikash_katta   126 Aug 12 07:02 exece3.c
+-rw-r--r--  1 harivikash_katta harivikash_katta    46 Aug  2 19:21 f1
+-rw-r--r--  1 harivikash_katta harivikash_katta     6 Aug  1 05:56 f101
+-rw-r--r--  1 harivikash_katta harivikash_katta    23 Aug  2 19:38 f2
+-rw-r--r--  1 harivikash_katta harivikash_katta   380 Aug  6 03:58 fork.c
+drwxr-xr-x  2 harivikash_katta harivikash_katta  4096 Jul 31 18:14 linux_task4
+drwxr-xr-x  2 harivikash_katta harivikash_katta  4096 Aug 25 14:13 logs
+-rw-r--r--  1 harivikash_katta harivikash_katta   241 Aug  6 03:43 mvx.c
+-rw-r--r--  1 harivikash_katta harivikash_katta   288 Jul 30 04:20 open.c
+-rw-r--r--  1 harivikash_katta harivikash_katta   262 Aug  1 06:02 open3.c
+drwxr-xr-x  2 harivikash_katta harivikash_katta  4096 Aug 25 14:47 outputs
+drwxr-xr-x  2 harivikash_katta harivikash_katta  4096 Jul 31 19:19 permission_lab
+-rw-r--r--  1 harivikash_katta harivikash_katta   220 Aug 12 05:28 pipe1.c
+-rw-r--r--  1 harivikash_katta harivikash_katta   225 Aug 12 06:07 pipe2.c
+-rw-r--r--  1 harivikash_katta harivikash_katta   238 Aug 12 06:35 pipe3.c
+-rwxr-xr-x  1 harivikash_katta harivikash_katta 16352 Aug 25 14:33 process_control
+-rw-r--r--  1 harivikash_katta harivikash_katta   190 Aug  2 19:39 read.c
+-rw-r--r--  1 harivikash_katta harivikash_katta    39 Aug  1 05:19 readwr.c
+drwxr-xr-x  2 harivikash_katta harivikash_katta  4096 Aug 25 14:13 src
+, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1121
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1121, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+=== Process Lifecycle Demo ===
+[PARENT] Running with PID: 1120
+
+[PARENT] Spawning child and waiting...
+
+
+[CHILD] Execution finished.
+[PARENT] Child exited, terminating parent process.
++++ exited with 0 +++

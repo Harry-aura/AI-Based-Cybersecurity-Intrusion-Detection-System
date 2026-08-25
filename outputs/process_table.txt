@@ -1,0 +1,28 @@
+    PID    PPID STAT COMMAND
+      1       0 Ss   /sbin/init
+      2       1 Sl+  /init
+      6       2 Sl+  plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+     46       1 S<s  /usr/lib/systemd/systemd-journald
+     78       1 Ss   /usr/lib/systemd/systemd-resolved
+     84       1 Ss   /usr/lib/systemd/systemd-udevd
+    104       1 Ss   /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+    105       1 Ss   /usr/sbin/cron -f -P
+    106       1 Ss   @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    110       1 Ss   /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+    130       1 Ss   /usr/lib/systemd/systemd-logind
+    173       1 Ssl  /usr/sbin/rsyslogd -n -iNONE
+    193       1 Ss+  /usr/sbin/agetty --noreset --noclear --issue-file=/etc/issue:/etc/issue.d:/run/issue.d:/usr/lib/issue.d - linux
+    206     104 S    /usr/sbin/chronyd -n -F 1 -x
+    216     206 S    /usr/sbin/chronyd -n -F 1 -x
+    259       1 Ssl  /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+    313       2 Ss   /init
+    314     313 S    /init
+    315     314 Ss   -bash
+    316       2 Ss   login -- harivikash_katta
+    362       1 Ss   /usr/lib/systemd/systemd --user
+    364     362 S    (sd-pam)
+    389     316 Ss+  -bash
+    856       1 Ssl  /usr/libexec/wsl-pro-service
+    960       1 Ssl  /usr/libexec/packagekitd
+    965       1 Ssl  /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+   1122     315 R+   ps -eo pid,ppid,stat,command
