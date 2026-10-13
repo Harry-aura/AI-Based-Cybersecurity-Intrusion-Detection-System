@@ -1,0 +1,12 @@
+{
+  "chi2": 980.766223612197,
+  "p_value": 0.0,
+  "n00": 153,
+  "n01": 79,
+  "n10": 1200,
+  "n11": 20846,
+  "significant": true,
+  "model1": "Best_Ensemble",
+  "model2": "Logistic_L2",
+  "conclusion": "Best_Ensemble significantly different from Logistic_L2"
+}
